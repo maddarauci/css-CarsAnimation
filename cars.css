@@ -1,0 +1,47 @@
+body {
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.area {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.car {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: moveAcross 4s linear infinite;
+  // animation-play-state: paused;
+}
+
+.car-1 {
+  fill: red;
+  animation-delay: -1s;
+  animation-duration: 10s;
+}
+.car-2 {
+  fill: blue;
+  top: 10px;
+  animation-delay: -2s;
+  animation-duration: 6s;
+}
+.car-3 {
+  fill: green;
+  top: 20px;
+  animation-delay: -3s;
+  animation-duration: 8s;
+}
+
+@keyframes moveAcross {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 110%;
+  }
+}
